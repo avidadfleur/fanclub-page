@@ -1,0 +1,203 @@
+/* Universal Styles */
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1464ff;
+}
+
+/* Header Section */
+
+header {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav Section */
+
+nav {
+    max-width: 100%;
+    border-top: 2px solid #3a14ff;
+    border-bottom: 2px solid #3a14ff;
+    padding: .75rem;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Jura';
+    font-weight: 700;
+    text-align: center;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1.5rem;
+}
+
+nav a {
+    color: #1464ff;
+}
+
+nav a:hover {
+    color: #14daff;
+}
+
+/* Members Section */
+
+#members {
+    margin: 3.5rem;
+    background-color: white;
+    display: flex;
+    font-size: 1.25rem;
+    padding: 2rem;
+    color: #3a14ff;
+    text-transform: uppercase;
+    font-family: 'Jura';
+    font-weight: 700;
+}
+
+#members-content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #3a14ff;
+}
+
+.title-container {
+    margin: 2.5rem;
+}
+
+.title-container .header {
+    font-family: 'Fjalla One', sans-serif;
+    color: #3a14ff;
+    font-size: 3.425rem;
+}
+
+#members-content .members-container {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+}
+
+#members-content .staff-image {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.figure img {
+    max-width: 300px;
+    height: auto;
+    flex: 1;
+    margin: 0.55rem;
+}
+
+.figure .text {
+    margin-bottom: 0.55rem;
+}
+
+/* Intro Section */
+
+#intro {
+    margin: 3.5rem auto;
+    color: white;
+    padding: 2rem;
+    font-family: 'Jura';
+    font-weight: 700;
+    text-align: center;
+}
+
+#intro-content h1 {
+    font-size: 3.425rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#intro-content p {
+    font-size: 1.25rem;
+}
+
+#intro-content img {
+    max-width: 800px;
+    height: auto;
+    flex: 1;
+    margin: 0.55rem;
+}
+
+/* Join Section */
+
+#join {
+    margin: 3.5rem auto;
+    color: white;
+    padding: 2rem;
+    font-family: 'Jura';
+    font-weight: 700;
+    text-align: center;
+}
+
+#join-content h1 {
+    font-size: 2.425rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#join-content p {
+    font-size: 1.25rem;
+}
+
+#join-content img {
+    max-width: 800px;
+    height: auto;
+    flex: 1;
+    margin: 0.55rem;
+}
+
+
+@media only screen and (max-width: 1048px) {
+    
+    .figure img,
+    #intro-content img,
+    #join-content img {
+        width: 100%;
+        margin: 0.55rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    nav ul {
+      display: block;
+      text-align: center;
+    }
+
+    li {
+        display: block;
+        text-align: center;
+    }
+
+  }
+  
+  @media only screen and (max-width: 320px) {
+    
+    nav {
+        display: block;
+        height: 200px
+    }
+
+    .figure img,
+    #intro-content img,
+    #join-content img {
+        width: 100%;
+        margin: 0.55rem;
+    }
+  }
